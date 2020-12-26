@@ -1,0 +1,77 @@
+body{
+    display: grid;
+    background-color: #343434;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.current-num {
+  place-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;    
+}
+
+.dice {
+  background-color: #00688B;
+  opacity: 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  place-self: center;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  't-left   t-center	t-right'
+  'm-left	m-center	m-right'
+  'b-left	b-center	b-right';
+}
+
+.dot {
+  background-color: #00AC68;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  place-self: center;
+}
+
+/*dot location classes*/
+.t-left {
+grid-area: t-left;
+}
+.t-center {
+grid-area: t-center;
+}
+.t-right {
+grid-area: t-right;
+}
+.m-left {
+grid-area: m-left;
+}
+.m-center {
+grid-area: m-center;
+}
+.m-right {
+grid-area: m-right;
+}
+.b-left {
+grid-area: b-left;
+}
+.b-center {
+grid-area: b-center;
+}
+.b-right {
+grid-area: b-right;
+}
+
+/* show/hide flag */
+.hide {
+    display: none;
+}
